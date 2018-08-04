@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf
 	tf2
+	nmea_navsat_driver
+	nmea_msgs
 )
 
 catkin_package(
@@ -33,6 +35,6 @@ add_executable(gnss_filter_node
 	main/gnss_filter_node.cpp
 	)
 target_link_libraries(gnss_filter_node
-	${catkin_LIBRARIES}
 	gnss_filter
+	${catkin_LIBRARIES}
 	)	

@@ -1,0 +1,10 @@
+<launch>
+
+	<node pkg="ymg_gnss_filter" type="ymg_gnss_filter" name="ymg_gnss_filter" output="screen">
+		<param name="robot_frame" value = "base_link_yp"/>
+		<param name="robot_gnss_frame" value = "base_link"/>
+		<param name="odom_frame" value = "odom"/>
+		<param name="gnss_frame" value = "base_link"/>
+	</node>
+
+</launch>
